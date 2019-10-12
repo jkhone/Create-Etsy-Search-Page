@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Etsy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -15,13 +16,16 @@
         <header>
 
             <div class="top">
-                <h1>Etsy</h1>
-                <input type="text" placeholder="Search" id="search">
-                <button></button>
+                <a href="#"><h1 id="sitename">Etsy</h1></a>
+                <input type="text" placeholder="Search for items or shops" id="search">
+                <button><i class="fa fa-search"></i></button>
                 <p id="sell"><a href="#">Sell on Etsy</a></p>
                 <p id="register"><a href="#">Register</a></p>
-                <button id="signin">Sign in</button>
-                <button id="cart">Cart</button>
+                <button id="signin"><a href="#">Sign in</a></button>
+                <div id="cart">
+                    <a href=""><img src="./assets/cart.png" alt=""></a>
+                    <button>Cart</button>
+                </div>
             </div>
             
             <div class="nav">
@@ -34,7 +38,7 @@
                     <li>Art & Collectibles</li>
                     <li>Craft Supplies</li>
                     <li>Vintage</li>
-                    <li>Gifts</li>
+                    <li><i class="fa fa-gift"></i></i> Gifts</li> 
                 </ul>
             </div>
 
@@ -42,16 +46,16 @@
 
             <div class="specific">
                 <ul id="bar3">
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
-                    <li class="itemtype">whiskey</li>
+                    <li class="itemtype">whiskey decanter</li>
+                    <li class="itemtype">whiskey stones</li>
+                    <li class="itemtype">whiskey glasses</li>
+                    <li class="itemtype">whiskey barrel</li>
+                    <li class="itemtype">bourbon</li>
+                    <li class="itemtype">scotch</li>
+                    <li class="itemtype">whiskey gift</li>
+                    <li class="itemtype">whiskey sign</li>
+                    <li class="itemtype">whiskey svg</li>
+                    <li class="itemtype">beer</li>
                 </ul>
             </div>
 
@@ -60,17 +64,128 @@
         <section class="shop">
 
             <aside class="sidebar">
-                <p>All categories</p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>All categories</li>
+
+                    <li>Home & Living</li>
+                    <li>Art & Collectibles</li>
+                    <li>Weddings</li>
+                    <li>Clothing</li>
+                    
+                    <li>Show more </li>
+
+                    <li>Special offers</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> FREE shipping</li>
+                        <li><input type="checkbox"> On sale</li>
+                    </div>
+
+                    <li>Ready to ship in</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> 1 business day</li>
+                        <li><input type="checkbox"> 1 – 3 business days</li>
+                    </div>
+
+                    <li>Material</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> Ceramic</li>
+                        <li><input type="checkbox"> Cork</li>
+                        <li><input type="checkbox"> Fabric</li>
+                        <li><input type="checkbox"> Glass</li>
+                        <li><input type="checkbox"> Metal</li>
+                    </div>
+                    <li>Show more </li>
+
+                    <li>Color</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> eige</li>
+                        <li><input type="checkbox"> Black</li>
+                        <li><input type="checkbox"> Blue</li>
+                        <li><input type="checkbox"> Bronze</li>
+                        <li><input type="checkbox"> Brown</li>
+                    </div>
+
+                    <li>Show more </li>
+
+
+                    <li>Can be personalized</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> Yes</li>
+                        <li><input type="checkbox"> No</li>
+                    </div>
+
+                    <li>Occasion</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> Anniversary</li>
+                        <li><input type="checkbox"> Baby shower</li>
+                        <li><input type="checkbox"> Bachelor party</li>
+                        <li><input type="checkbox"> Bachelorette party</li>
+                        <li><input type="checkbox"> Baptism</li>
+                    </div>
+
+                    <li>Show more </li>
+
+                    <li>Holiday</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> Christmas</li>
+                        <li><input type="checkbox"> Cinco de Mayo</li>
+                        <li><input type="checkbox"> Easter</li>
+                        <li><input type="checkbox"> Father's Day</li>
+                        <li><input type="checkbox"> Halloween</li>
+                    </div>
+
+                    <li>Show more </li>
+                    
+
+                    <li>Shop location</li>
+                    <div class="needsradio">
+                        <li><input type="radio"> Anywhere</li>
+                        <li><input type="radio"> United States</li>
+                        <li><input type="radio"> Custom</li>
+                        <li>Enter location</li>
+                        <li>Enter location</li>
+                    </div>
+
+                    <li>Item type</li>
+                    <div class="needsradio">
+                        <li><input type="radio"> All items</li>
+                        <li><input type="radio"> Handmade</li>
+                        <li><input type="radio"> Vintage</li>
+                    </div>
+
+                    <li>Price ($)</li>
+                    <div class="needsradio">
+                        <li><input type="radio"> Any price</li>
+                        <li><input type="radio"> Under $25</li>
+                        <li><input type="radio"> $25 to $75</li>
+                        <li><input type="radio"> $75 to $100</li>
+                        <li><input type="radio"> Over $100</li>
+                        <li><input type="radio"> Custom</li>
+                    </div>
+
+                    <li>Enter minimum price</li>
+
+                    <li>Low</li>
+                    <li>to</li>
+                    <li>Enter maximum price</li>
+                    <li>High</li>
+
+                    <li>Ordering options</li>
+                    <div class="needsbox">
+                        <li><input type="checkbox"> Accepts Etsy gift cards</li>
+                        <li><input type="checkbox"> Can be gift-wrapped</li>
+                    </div>
+
+                    <li>Ship to</li>
+                    <li>Choose country...</li>
                 </ul>
             </aside>
 
-            <main id="products"></main>
+
+
+            <main id="products">
+
+            </main>
             
         </section>
 
@@ -88,3 +203,17 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+<div id="shoptop">
+        <div class="left">
+            <p>All categories</p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="right">
+            <p>New options</p>
+            <p>Sort by: Relevancy</p>
+            <div>ARROW</div>
+        </div>
+    </div>
