@@ -18,7 +18,7 @@ const html = items.results.map(item => {
         item.currency_code = "&pound"
     }
     return `
-    <div class="product">
+    <a href = "${item.url}" target = "_blank"><div class="product">
     <img src="${item.Images[0].url_fullxfull}" alt="">
     <p class="itemname">${item.title}</p>
     <div class="info">
@@ -28,7 +28,7 @@ const html = items.results.map(item => {
         </div>
         <p class="price">${item.currency_code}${item.price}</p>
     </div>
-    </div>
+    </div></a>
     `
 }).join("")
 
