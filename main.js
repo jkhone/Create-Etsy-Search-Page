@@ -20,6 +20,7 @@ const html = items.results.map(item => {
     return `
     <a href = "${item.url}" target = "_blank"><div class="product">
     <img src="${item.Images[0].url_fullxfull}" alt="">
+    <i class="fa fa-heart" id="heart"></i>
     <p class="itemname">${item.title}</p>
     <div class="info">
         <p class="stock">${item.quantity} left in stock</p>
@@ -40,4 +41,5 @@ document.querySelector("#products").innerHTML = html
 
 // console.log(items.results[0].currency_code)
 
-console.log(items.results[0])
+// console.log(items.results[0])
+{/* <div class="heart"><a href="#"><i class="fa fa-heart"></i></a></div> */}

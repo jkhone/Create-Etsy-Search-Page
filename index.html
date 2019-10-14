@@ -18,7 +18,7 @@
             <div class="top">
                 <a href="#"><h1 id="sitename">Etsy</h1></a>
                 <input type="text" placeholder="Search for items or shops" id="search">
-                <button><i class="fa fa-search"></i></button>
+                <button class="magnify"><i class="fa fa-search"></i></button>
                 <p id="sell"><a href="#">Sell on Etsy</a></p>
                 <p id="register"><a href="#">Register</a></p>
                 <button id="signin"><a href="#">Sign in</a></button>
@@ -67,12 +67,14 @@
                 <ul>
                     <li>All categories</li>
 
-                    <li>Home & Living</li>
-                    <li>Art & Collectibles</li>
-                    <li>Weddings</li>
-                    <li>Clothing</li>
+                    <div class="allcats">
+                        <li>Home & Living</li>
+                        <li>Art & Collectibles</li>
+                        <li>Weddings</li>
+                        <li>Clothing</li>
+                    </div>
                     
-                    <li>Show more </li>
+                    <li><i class="fa fa-plus"></i>&nbsp; Show more </li>
 
                     <li>Special offers</li>
                     <div class="needsbox">
@@ -94,7 +96,7 @@
                         <li><input type="checkbox"> Glass</li>
                         <li><input type="checkbox"> Metal</li>
                     </div>
-                    <li>Show more </li>
+                    <li><i class="fa fa-plus"></i>&nbsp; Show more </li>
 
                     <li>Color</li>
                     <div class="needsbox">
@@ -105,7 +107,7 @@
                         <li><input type="checkbox"> Brown</li>
                     </div>
 
-                    <li>Show more </li>
+                    <li><i class="fa fa-plus"></i>&nbsp; Show more </li>
 
 
                     <li>Can be personalized</li>
@@ -123,7 +125,7 @@
                         <li><input type="checkbox"> Baptism</li>
                     </div>
 
-                    <li>Show more </li>
+                    <li><i class="fa fa-plus"></i>&nbsp; Show more </li>
 
                     <li>Holiday</li>
                     <div class="needsbox">
@@ -134,7 +136,7 @@
                         <li><input type="checkbox"> Halloween</li>
                     </div>
 
-                    <li>Show more </li>
+                    <li><i class="fa fa-plus"></i>&nbsp; Show more </li>
                     
 
                     <li>Shop location</li>
@@ -142,8 +144,7 @@
                         <li><input type="radio"> Anywhere</li>
                         <li><input type="radio"> United States</li>
                         <li><input type="radio"> Custom</li>
-                        <li>Enter location</li>
-                        <li>Enter location</li>
+                        <input type="text" class="location" placeholder="Enter location">
                     </div>
 
                     <li>Item type</li>
@@ -165,10 +166,11 @@
 
                     <li>Enter minimum price</li>
 
-                    <li>Low</li>
-                    <li>to</li>
-                    <li>Enter maximum price</li>
-                    <li>High</li>
+                    <div class="money">
+                        <input type="text" placeholder="Low">
+                        <li>to</li>
+                        <input type="text" placeholder="High">
+                    </div>
 
                     <li>Ordering options</li>
                     <div class="needsbox">
@@ -178,6 +180,9 @@
 
                     <li>Ship to</li>
                     <li>Choose country...</li>
+                    <select class="country" name="country" id="">
+                        <option value="USA">United States of America</option>
+                    </select>
                 </ul>
             </aside>
 
@@ -193,6 +198,9 @@
         <hr style="width:100%; height:2px; background-color: #dedede; border:none;" />
 
         <footer>
+            <div>
+                
+            </div>
 
         </footer>
 
@@ -204,7 +212,7 @@
 </body>
 </html>
 
-<div id="shoptop">
+<!-- <div id="shoptop">
         <div class="left">
             <p>All categories</p>
             <p></p>
@@ -216,4 +224,4 @@
             <p>Sort by: Relevancy</p>
             <div>ARROW</div>
         </div>
-    </div>
+    </div> -->

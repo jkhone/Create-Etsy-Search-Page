@@ -59,6 +59,7 @@ h1 {
     border: 1px solid #cecece;
     font-size: 18px;
     transition: border 1s,  background-color 1s, color 1s;
+    position: relative;
 }
 
 #search:focus {
@@ -66,6 +67,15 @@ h1 {
     border: 1px solid black;
     background: white;
     color: black;
+}
+
+.magnify {
+    border: none;
+    position: absolute;
+    right: 410px;
+    top: 25px;
+    font-size: 25px;
+    background: inherit;
 }
 
 #sell a, #register a {
@@ -172,8 +182,49 @@ h1 {
     line-height: 30px;
 }
 
-.needsbox input {
-    width: px;
+.allcats {
+    padding-left: 20px;
+}
+
+.needsbox, .needsradio, .allcats {
+    font-size: 12px;
+}
+
+.needsbox li:hover, .needsradio li:hover, .allcats li:hover {
+    text-decoration: underline;
+    color: #8b8b8b;
+}
+
+.location {
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: 1px solid #cecece;
+    outline: none;
+}
+
+.money {
+    display: flex;
+}
+
+.money input {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: 1px solid #cecece;
+    margin: 0 10px;
+    outline: none;
+}
+
+.country {
+    width: 140px;
+    height: 35px;
+    border: 1px solid #cecece;
+    outline: none;
 }
 
 /* ^Sidebar^ */
@@ -222,7 +273,34 @@ main {
 .product {
     display: grid;
     cursor: pointer;
+    position: relative;
 }
+
+.product:hover #heart {
+    display: block;
+    color: white;
+    background: #222222;
+    border-radius: 50%;
+    background-position: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+	margin-top: 7px;	
+	margin-right: 7px;
+	position: absolute;
+	right: 0;
+	top: 0;
+    display: none;
+    color: #222222;
+    transition: color 1s;
+}
+
 
 .info {
     display: flex;
@@ -258,5 +336,10 @@ main {
 
 /* Footer */
 
-
+footer {
+    height: 350px;
+    width: auto;
+    background-image: url(https://wallpaperbro.com/img/53025.jpg);
+    background-position: 0 -175px;
+}
 
