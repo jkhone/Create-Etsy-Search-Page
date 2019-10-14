@@ -35,11 +35,6 @@ const html = items.results.map(item => {
 
 document.querySelector("#products").innerHTML = html
 
-// var example = items.map(item => {
-//     return `${item.results.title}`
-// })
-
 // console.log(items.results[0].currency_code)
 
 // console.log(items.results[0])
-{/* <div class="heart"><a href="#"><i class="fa fa-heart"></i></a></div> */}
